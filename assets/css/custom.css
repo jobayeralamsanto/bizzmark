@@ -79,6 +79,9 @@ body {
 .bg-soft-blue {
   background: #95d5fd54 !important;
 }
+.bg-deep-ash {
+  background: #6c849d52;
+}
 .hero-bg {
   background-image: url(../img/bg.png);
   background-position: center;
@@ -88,9 +91,77 @@ body {
 .text-navy {
   color: #004169 !important;
 }
-.main-title {
-  font-size: 90px;
-  font-weight: 800;
+@media (min-width: 768px) {
+  .main-title {
+    font-size: 90px;
+    font-weight: 800;
+  }
+  .sub-title {
+    font-size: 66px;
+    font-weight: 800;
+  }
+}
+@media (max-width: 767px) {
+  .main-title {
+    font-size: 40px;
+    font-weight: 800;
+  }
+  .sub-title {
+    font-size: 36px;
+    font-weight: 800;
+  }
+  .fs-sm-13 {
+    font-size: 13px;
+  }
+  .fs-sm-14 {
+    font-size: 14px;
+  }
+  .fs-sm-15 {
+    font-size: 15px;
+  }
+  .fs-sm-16 {
+    font-size: 16px;
+  }
+  .fs-sm-17 {
+    font-size: 17px;
+  }
+  .fs-sm-18 {
+    font-size: 18px;
+  }
+  .fs-sm-19 {
+    font-size: 19px;
+  }
+  .fs-sm-20 {
+    font-size: 20px;
+  }
+  .fs-sm-21 {
+    font-size: 21px;
+  }
+  .fs-sm-22 {
+    font-size: 22px;
+  }
+  .fs-sm-23 {
+    font-size: 23px;
+  }
+  .fs-sm-24 {
+    font-size: 24px;
+  }
+  .fs-sm-25 {
+    font-size: 25px;
+  }
+  .fs-sm-26 {
+    font-size: 26px;
+  }
+  .fs-sm-32 {
+    font-size: 32px;
+  }
+  .fs-sm-65 {
+    font-size: 65px;
+    line-height: 65px;
+  }
+  .w-sm-17 {
+    width: 7rem !important;
+  }
 }
 .fw-800 {
   font-weight: 800;
@@ -219,12 +290,17 @@ body {
     box-shadow: 0px 6px 10px 4px #00000026;
     background: #fff;
   }
+  .offcanvas-nav {
+    background: #fff;
+    width: 230px !important;
+    padding-left: 15px !important;
+  }
   .navbar-expand-lg .navbar-nav .nav-link.active {
     background: #30b0ff26;
     color: #30b0ff !important;
     font-weight: 400 !important;
     margin-right: 20px;
-    padding: 8px 15px;
+    padding: 8px 10px;
     border-radius: 40px;
     line-height: 16px;
     margin-bottom: 5px;
@@ -249,6 +325,24 @@ body {
     padding: 3px !important;
   }
   .offcanvas-header {
-    padding: 5px !important;
+    padding: 20px 11px 25px 15px !important;
+  }
+  .offcanvas-header::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 85%;
+    top: 65px;
+    height: 1px;
+    background-color: #c9c9c9;
+    margin: auto;
+  }
+  .mobile-nav-footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 15px;
   }
 }
