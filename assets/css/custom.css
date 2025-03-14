@@ -82,16 +82,17 @@ body {
 .bg-deep-ash {
   background: #6c849d52;
 }
-.hero-bg {
-  background-image: url(../img/bg.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
+
 .text-navy {
   color: #004169 !important;
 }
 @media (min-width: 768px) {
+  .hero-bg {
+    background-image: url(../img/bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
   .main-title {
     font-size: 90px;
     font-weight: 800;
@@ -102,6 +103,12 @@ body {
   }
 }
 @media (max-width: 767px) {
+  .hero-bg {
+    background-image: url(../img/hero-bg-mobile.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
   .main-title {
     font-size: 40px;
     font-weight: 800;
@@ -318,13 +325,16 @@ body {
     color: #30b0ff !important;
     font-weight: 400 !important;
     margin-right: 20px;
-    padding: 8px 10px;
+    padding: 8px 15px;
     border-radius: 40px;
     line-height: 16px;
     margin-bottom: 5px;
     font-size: 14px !important;
   }
-  .navbar-expand-lg .navbar-nav .nav-link.active svg path {
+  .navbar-expand-lg .navbar-nav .nav-link.active .type-1 path {
+    fill: #30b0ff;
+  }
+  .navbar-expand-lg .navbar-nav .nav-link.active .type-2 {
     fill: #30b0ff;
   }
   .navbar-expand-lg .navbar-nav .nav-link {
@@ -362,5 +372,10 @@ body {
     bottom: 0;
     right: 0;
     padding: 15px;
+  }
+}
+@media (max-width: 991.98px) {
+  .navbar .navbar-collapse .nav-link:focus {
+    color: #0e0d0d !important;
   }
 }
