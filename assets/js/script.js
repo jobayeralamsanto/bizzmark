@@ -13,3 +13,9 @@ function closeMobileMenu() {
 }
 
 // end script for mobile menu
+
+AOS.init({
+  once: false,
+  duration: 1200,
+  mirror: true,
+});
